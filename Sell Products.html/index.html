@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <title>Sellers admin page with 3 subsection</title>
+  </head>
+  <body>
+    <form onsubmit="addUser(event)">
+        <label for="appointment">Selling Price:</label>
+        <input type="number"  id="appointment" name="appointment" required/>
+        <label for="description">Product Price:</label>
+        <input type="text" id="description" name="description" required/>
+        <label for="category">Choose A Catagory</label>
+        <select id="category" name="category">
+            <option value="Electronics" >Electronics</option>
+            <option value="food">Food</option>
+            <option value="skincare">Skin care</option>
+        </select>
+        
+        <input type="submit" value="Add product">
+    </form>
+    <div id="message"></div>
+    <h1>Products</h1>
+    <h2>Electronics Items</h2>
+    <h2>Food Items</h2>
+    <h2>Skin Items</h2>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.6/axios.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
